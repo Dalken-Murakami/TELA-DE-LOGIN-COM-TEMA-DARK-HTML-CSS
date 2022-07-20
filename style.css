@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
 body{
     margin: 0;
+    font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .main-login{
     width: 100vw;
@@ -11,7 +13,7 @@ body{
 }
 
 .left-login {
-    width: 50vh;
+    width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,15 +23,22 @@ body{
 
 .left-login > h1{
     color: #77ffc0;
+    font-size: 3vw;
 }
 .right-login {
-    width: 50vh;
+    width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.left-login-image{
+    width: 35vw;
 
+}
+.card-login > h1 {
+    color: #77ffc0;
+}
 .card-login {
     width: 60%;
     display: flex;
@@ -37,4 +46,59 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
+    background: #2f2941;
+    border-radius: 20px;
+    box-shadow: 0px -10px 40px #00000056;
 }
+
+.card-title > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px -10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color:#f0ffffde;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    counter-reset: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
